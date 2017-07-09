@@ -8,7 +8,7 @@ import Footer from "../components/Footer"
 
 class BlogIndex extends React.Component {
   render() {
-    // console.log("props", this.props)
+    //console.log("props", this.props)
     const pageLinks = []
     const siteTitle = get(this, "props.data.site.siteMetadata.title")
     const posts = get(this, "props.data.allMarkdownRemark.edges")
@@ -18,7 +18,9 @@ class BlogIndex extends React.Component {
         pageLinks.push(
           <li
             key={post.node.path}
-            style={{            }}
+            style={{
+
+            }}
           >
             <Link style={{ boxShadow: "none" }} to={post.node.frontmatter.path}>
               {post.node.frontmatter.title}
