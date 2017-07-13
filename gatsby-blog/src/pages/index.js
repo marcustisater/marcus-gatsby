@@ -16,10 +16,27 @@ class BlogIndex extends React.Component {
         const title = get(post, "node.frontmatter.title") || post.node.path
         pageLinks.push(
           <li
+            style={{
+              marginBottom: "1rem",
+              paddingTop: "1rem",
+              borderTop: "1px solid #eee",
+            }}
             key={post.node.frontmatter.path}
           >
-            <Link style={{ boxShadow: "none" }} to={post.node.frontmatter.path}>
-              {post.node.frontmatter.title}
+            <Link style={{ boxShadow: "none", display: "flex" }} to={post.node.frontmatter.path}>
+
+              <div style={{
+                fontWeight: "700",
+                color: "#222",
+              }}>
+                {post.node.frontmatter.title}
+              </div>
+
+              <div style={{
+                marginLeft: "1rem"
+              }}>
+                {"Read more..."}
+              </div>
             </Link>
           </li>
         )
@@ -29,9 +46,14 @@ class BlogIndex extends React.Component {
     return (
       <div>
         <Helmet title={get(this, "props.data.site.siteMetadata.title")} />
+        {/*<h2 style={{fontSize: "3rem"}}> Hi <span style={{fontSize: "4.5rem"}}>👋</span></h2>*/}
         <Bio />
-        <h2> Latest Blog posts </h2>
-        <ul>
+        <h2> Latest blog posts </h2>
+        <ul style={{
+          listStyleType: "none",
+          margin: 0,
+          padding: 0,
+        }}>
           {pageLinks}
         </ul>
       </div>

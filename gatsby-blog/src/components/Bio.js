@@ -24,24 +24,23 @@ class Bio extends React.Component {
               alt={`Marcus Tisäter`}
               style={{
                 marginBottom: 0,
-                width: "95px",
-                height: "95px",
+                width: "90px",
+                height: "90px",
               }}
             />
 
           </div>
 
           <div style={{
-            marginLeft: "1rem"
+            marginLeft: "1.25rem"
           }}>
 
             <h1
               style={{
                 marginTop: 0,
-                fontSize: "2.3rem",
+                fontSize: "2rem",
                 marginTop: 0,
                 lineHeight: "1",
-                letterSpacing: "-1px",
                 marginBottom: "0"
               }}
             >
@@ -67,18 +66,19 @@ class Bio extends React.Component {
               }}>
               Front-end developer at
               {" "}
-              <Link
+              <a
                 style={{
                   boxShadow: "none",
                   textDecoration: "none",
                   color: "#5694f1",
                   }}
-                  to={"/"}
+                  target="_blank"
+                  href="http://www.ottoboni.se"
                 >
                 Ottoboni Group
-              </Link>
+              </a>,
               <p style={{margin:0}}>
-                part of Nordic Morning
+                part of nordic morning
               </p>
             </p>
           </div>
