@@ -4,11 +4,10 @@ import get from "lodash/get"
 import Helmet from "react-helmet"
 
 import Bio from "../components/Bio"
-import Footer from "../components/Footer"
 
 class BlogIndex extends React.Component {
   render() {
-    //console.log("props", this.props)
+    // console.log("props", this.props)
     const pageLinks = []
     const siteTitle = get(this, "props.data.site.siteMetadata.title")
     const posts = get(this, "props.data.allMarkdownRemark.edges")
@@ -17,10 +16,7 @@ class BlogIndex extends React.Component {
         const title = get(post, "node.frontmatter.title") || post.node.path
         pageLinks.push(
           <li
-            key={post.node.path}
-            style={{
-
-            }}
+            key={post.node.frontmatter.path}
           >
             <Link style={{ boxShadow: "none" }} to={post.node.frontmatter.path}>
               {post.node.frontmatter.title}
@@ -34,7 +30,10 @@ class BlogIndex extends React.Component {
       <div>
         <Helmet title={get(this, "props.data.site.siteMetadata.title")} />
         <Bio />
-        <Footer />
+        <h2> Latest Blog posts </h2>
+        <ul>
+          {pageLinks}
+        </ul>
       </div>
     )
   }

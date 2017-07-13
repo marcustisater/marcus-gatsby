@@ -1,9 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Marcus Tisäter Blog",
+    title: "Marcus Tisäter",
     author: "Marcus Tisäter",
   },
-
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,

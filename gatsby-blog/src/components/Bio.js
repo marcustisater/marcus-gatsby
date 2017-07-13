@@ -1,144 +1,88 @@
 import React from "react"
 import Link from "gatsby-link"
 
-import postcssImage from "./postcss.png"
-import wpsvImage from "./wpsv.png"
-import meetupImage from "./meetup.png"
-import blogImage from "./blog.png"
+import profilePic from "./profile-pic.png"
 
 class Bio extends React.Component {
   render() {
     return (
       <main className="site-main" role="main">
-
-        <ul style={{ maxWidth: "37rem", margin: "0 auto"}}>
-
-          <li style={{
-            padding: "2rem",
-            lineHeight: "1.5",
+        <div className="header"
+          style={{
+            paddingTop: "3rem",
+            paddingBottom: "3rem",
             display: "flex",
             alignItems: "center",
-            borderColor: "rgba(0,0,0,.1)",
-            borderBottomStyle: "solid",
-            borderBottomWidth: "1px"
-          }}>
+          }}
+        >
+
+          <div>
+
             <img
-              src={postcssImage}
-              alt={`postcss`}
+              className="headerFlexImage"
+              src={profilePic}
+              alt={`Marcus Tisäter`}
               style={{
-                width: "4rem",
-                borderRadius: "100%"
+                marginBottom: 0,
+                width: "95px",
+                height: "95px",
               }}
             />
-              <div
-                style={{
-                  flex: "1 1 auto",
-                  minWidth: "0",
-                  minHeight: "0",
-                  paddingLeft: "1rem"
-                }}
-              >
-                <p style={{fontSize: "1.25rem", marginBottom: "0", marginTop: "0"}}>postcss.org</p>
-                <p style={{margin: 0}}>I lead the scrum of postcss.org and helped with the development in React</p>
-                <Link className="readmore" to={"/how-we-built-postcss-org-with-an-open-source-team-of-collaborators/"}> Read more </Link>
-              </div>
-          </li>
 
-          <li style={{
-            padding: "2rem",
-            lineHeight: "1.5",
-            display: "flex",
-            alignItems: "center",
-            borderColor: "rgba(0,0,0,.1)",
-            borderBottomStyle: "solid",
-            borderBottomWidth: "1px"
+          </div>
+
+          <div style={{
+            marginLeft: "1rem"
           }}>
-            <img
-              src={wpsvImage}
-              alt={`wordpress sverige`}
-              style={{
-                width: "4rem",
-                borderRadius: "100%"
-              }}
-            />
-              <div
-                style={{
-                  flex: "1 1 auto",
-                  minWidth: "0",
-                  minHeight: "0",
-                  paddingLeft: "1rem"
-                }}
-              >
-                <p style={{fontSize: "1.25rem", marginBottom: "0", marginTop: "0"}}>WordPress Sverige</p>
-                <p style={{margin: 0}}>I help organize meetups in Stockholm, also last years WordCamp Stockholm 2016 at Internetdagarna.</p>
-                <Link className="readmore" to={"/about"}> Read more </Link>
-              </div>
-          </li>
 
-          <li style={{
-            padding: "2rem",
-            lineHeight: "1.5",
-            display: "flex",
-            alignItems: "center",
-            borderColor: "rgba(0,0,0,.1)",
-            borderBottomStyle: "solid",
-            borderBottomWidth: "1px"
-          }}>
-            <img
-              src={blogImage}
-              alt={`blog`}
+            <h1
               style={{
-                width: "4rem",
-                height: "4rem",
-                borderRadius: "100%"
+                marginTop: 0,
+                fontSize: "2.3rem",
+                marginTop: 0,
+                lineHeight: "1",
+                letterSpacing: "-1px",
+                marginBottom: "0"
               }}
-            />
-              <div
+            >
+              <Link
                 style={{
-                  flex: "1 1 auto",
-                  minWidth: "0",
-                  minHeight: "0",
-                  paddingLeft: "1rem"
+                  boxShadow: "none",
+                  textDecoration: "none",
+                  color: "inherit",
                 }}
+                to={"/"}
               >
-                <p style={{fontSize: "1.25rem", marginBottom: "0", marginTop: "0"}}>Blog</p>
-                <p style={{margin: 0}}>Feel free to read some of my blog posts! I also write on websites like CSS-Tricks</p>
-                <Link className="readmore" to={"/about"}> Read more </Link>
-              </div>
-          </li>
+                Marcus Tisäter
+              </Link>
+            </h1>
 
-          <li style={{
-            padding: "2rem",
-            lineHeight: "1.5",
-            display: "flex",
-            alignItems: "center",
-            borderColor: "rgba(0,0,0,.1)",
-            borderBottomStyle: "solid",
-            borderBottomWidth: "1px"
-          }}>
-            <img
-              src={meetupImage}
-              alt={`speaker`}
-              style={{
-                width: "4rem",
-                borderRadius: "100%"
-              }}
-            />
-              <div
+              <p style={{
+                fontSize: "1.25rem",
+                marginTop: "0.25em",
+                marginBottom: "0",
+                fontWeight: "300",
+                color: "#aaa",
+
+              }}>
+              Front-end developer at
+              {" "}
+              <Link
                 style={{
-                  flex: "1 1 auto",
-                  minWidth: "0",
-                  minHeight: "0",
-                  paddingLeft: "1rem"
-                }}
-              >
-                <p style={{fontSize: "1.25rem", marginBottom: "0", marginTop: "0"}}>Speaker</p>
-                <p style={{margin: 0}}>Sometimes I speak at conferences and meetups</p>
-                <Link className="readmore" to={"/about"}> Read more </Link>
-              </div>
-          </li>
-
-        </ul>
+                  boxShadow: "none",
+                  textDecoration: "none",
+                  color: "#5694f1",
+                  }}
+                  to={"/"}
+                >
+                Ottoboni Group
+              </Link>
+              <p style={{margin:0}}>
+                part of Nordic Morning
+              </p>
+            </p>
+          </div>
+        </div>
 		   </main>
     )
   }
