@@ -24,8 +24,8 @@ class Bio extends React.Component {
               alt={`Marcus Tisäter`}
               style={{
                 marginBottom: 0,
-                width: "90px",
-                height: "90px",
+                width: "125px",
+                height: "125px",
               }}
             />
 
@@ -38,7 +38,7 @@ class Bio extends React.Component {
             <h1
               style={{
                 marginTop: 0,
-                fontSize: "2rem",
+                fontSize: "3.25rem",
                 marginTop: 0,
                 lineHeight: "1",
                 marginBottom: "0"
@@ -57,7 +57,7 @@ class Bio extends React.Component {
             </h1>
 
               <p style={{
-                fontSize: "1.25rem",
+                fontSize: "1.35rem",
                 marginTop: "0.25em",
                 marginBottom: "0",
                 fontWeight: "300",

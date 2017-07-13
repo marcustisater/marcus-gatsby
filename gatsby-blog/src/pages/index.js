@@ -20,6 +20,7 @@ class BlogIndex extends React.Component {
               marginBottom: "1rem",
               paddingTop: "1rem",
               borderTop: "1px solid #eee",
+              fontSize: "1.3rem",
             }}
             key={post.node.frontmatter.path}
           >

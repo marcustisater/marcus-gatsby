@@ -2,7 +2,6 @@ import React from "react"
 import Link from "gatsby-link"
 import { Container } from "react-responsive-grid"
 import Footer from "../components/Footer.js";
-import Author from "../components/Author.js";
 
 import "../css/sanitize.css";
 import "../css/style.css";
@@ -61,7 +60,6 @@ class Template extends React.Component {
       <Container>
         {header}
         {children()}
-        <Author />
         <Footer />
       </Container>
     )
