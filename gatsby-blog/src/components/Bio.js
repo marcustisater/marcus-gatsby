@@ -24,8 +24,8 @@ class Bio extends React.Component {
               alt={`Marcus Tisäter`}
               style={{
                 marginBottom: 0,
-                width: "125px",
-                height: "125px",
+                width: "115px",
+                height: "115px",
               }}
             />
 
@@ -34,11 +34,18 @@ class Bio extends React.Component {
           <div style={{
             marginLeft: "1.25rem"
           }}>
-
+            <p style={{
+              margin: 0,
+              fontSize: "1.5rem",
+              fontWeight: "700",
+              color: "#333",
+            }}>
+              Hi, I am
+            </p>
             <h1
               style={{
                 marginTop: 0,
-                fontSize: "3.25rem",
+                fontSize: "2.6rem",
                 marginTop: 0,
                 lineHeight: "1",
                 marginBottom: "0"
@@ -76,10 +83,7 @@ class Bio extends React.Component {
                   href="http://www.ottoboni.se"
                 >
                 Ottoboni Group
-              </a>,
-              <p style={{margin:0}}>
-                part of nordic morning
-              </p>
+              </a>
             </p>
           </div>
         </div>

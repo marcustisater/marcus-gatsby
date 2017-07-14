@@ -49,7 +49,7 @@ class BlogIndex extends React.Component {
         <Helmet title={get(this, "props.data.site.siteMetadata.title")} />
         {/*<h2 style={{fontSize: "3rem"}}> Hi <span style={{fontSize: "4.5rem"}}>👋</span></h2>*/}
         <Bio />
-        <h2> Latest blog posts </h2>
+        <h2 style={{fontSize: "1.75rem"}}> Latest blog posts </h2>
         <ul style={{
           listStyleType: "none",
           margin: 0,

@@ -6,13 +6,13 @@ export default class Speaking extends React.Component {
   render() {
     return (
       <div>
-        <h3>I spoke at </h3>
+        <h3>I spoke at 🙊</h3>
 
-        <p>Brandson about PostCSS. http://marcustisater.github.io/postcss-presentation/</p>
-        <p>NOX about PostCSS in depth. http://slides.com/marcustisater/postcss</p>
-        <p>IIS (Internetstiftelsen i Sverige) about the swedish WordPress community. http://slides.com/marcustisater/deck/</p>
+        <p>Brandson about PostCSS. <a href="http://marcustisater.github.io/postcss-presentation/">http://marcustisater.github.io/postcss-presentation/</a></p>
+        <p>NOX about PostCSS in depth. <a href="http://slides.com/marcustisater/postcss">http://slides.com/marcustisater/postcss</a></p>
+        <p>IIS (Internetstiftelsen i Sverige) about the swedish WordPress community. <a href="http://slides.com/marcustisater/deck/">http://slides.com/marcustisater/postcss</a></p>
 
-        <h3>Upcoming talks</h3>
+        <h3 style={{marginTop:"3rem"}}>Upcoming talks</h3>
 
         <p>CSS Grid Layout, TBD</p>
       </div>

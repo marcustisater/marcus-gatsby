@@ -82,8 +82,8 @@ If you haven’t read Mark Dalgelish’s article, The End of Global CSS, you sho
 ```
 import styles from "./index.css"
 
-<div className={ styles.info }>
-  <p className={ styles.license }>
+< div className={ styles.info }>
+  < p className={ styles.license }>
     { "Distributed under the MIT License." }
   < /p>
 < /div>

@@ -41,15 +41,15 @@ class Template extends React.Component {
             </li>
 
             <li>
-              <Link style={{ color: "#5694f1", padding: "0.4rem 0.8rem" }} to="https://github.com/marcustisater">
+              <a style={{ color: "#5694f1", padding: "0.4rem 0.8rem" }} target="_blank" href="https://github.com/marcustisater">
                 GitHub
-              </Link>
+              </a>
             </li>
 
             <li>
-              <Link style={{ color: "#5694f1", padding: "0.4rem 0.8rem" }} to="https://twitter.com/marcustister">
+              <a style={{ color: "#5694f1", padding: "0.4rem 0.8rem" }} target="_blank" href="https://twitter.com/marcustister">
                 Twitter
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>
