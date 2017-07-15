@@ -12,7 +12,7 @@ export default class Speaking extends React.Component {
         <p>NOX about PostCSS in depth. <a href="http://slides.com/marcustisater/postcss">http://slides.com/marcustisater/postcss</a></p>
         <p>IIS (Internetstiftelsen i Sverige) about the swedish WordPress community. <a href="http://slides.com/marcustisater/deck/">http://slides.com/marcustisater/postcss</a></p>
 
-        <h3 style={{marginTop:"3rem"}}>Upcoming talks</h3>
+        <h3>>Upcoming talks</h3>
 
         <p>CSS Grid Layout, TBD</p>
       </div>

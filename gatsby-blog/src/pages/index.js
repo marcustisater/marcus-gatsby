@@ -2,8 +2,34 @@ import React from "react"
 import Link from "gatsby-link"
 import get from "lodash/get"
 import Helmet from "react-helmet"
+import styled, { css } from 'styled-components';
 
 import Bio from "../components/Bio"
+
+const ArticleList = styled.li `
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+  font-size: 1.2rem;
+`;
+
+const ArticleListLink = styled.div `
+  margin-left: 1rem;
+`;
+
+const ArticleListTitle = styled.div `
+  color: #222;
+`;
+
+const BlogTitle = styled.h2 `
+  font-size: 1.75rem;
+`;
+
+const BlogList = styled.ul `
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+`;
 
 class BlogIndex extends React.Component {
   render() {
@@ -15,30 +41,20 @@ class BlogIndex extends React.Component {
       if (post.node.path !== "/404/") {
         const title = get(post, "node.frontmatter.title") || post.node.path
         pageLinks.push(
-          <li
-            style={{
-              marginBottom: "1rem",
-              paddingTop: "1rem",
-              borderTop: "1px solid #eee",
-              fontSize: "1.2rem",
-            }}
+          <ArticleList
             key={post.node.frontmatter.path}
           >
             <Link style={{ boxShadow: "none", display: "flex" }} to={post.node.frontmatter.path}>
 
-              <div style={{
-                color: "#222",
-              }}>
+              <ArticleListTitle>
                 {post.node.frontmatter.title}
-              </div>
+              </ArticleListTitle>
 
-              <div style={{
-                marginLeft: "1rem"
-              }}>
+              <ArticleListLink>
                 {"Read more.."}
-              </div>
+              </ArticleListLink>
             </Link>
-          </li>
+          </ArticleList>
         )
       }
     })
@@ -46,16 +62,11 @@ class BlogIndex extends React.Component {
     return (
       <div>
         <Helmet title={get(this, "props.data.site.siteMetadata.title")} />
-        {/*<h2 style={{fontSize: "3rem"}}> Hi <span style={{fontSize: "4.5rem"}}>👋</span></h2>*/}
         <Bio />
-        <h2 style={{fontSize: "1.75rem"}}> Latest blog posts </h2>
-        <ul style={{
-          listStyleType: "none",
-          margin: 0,
-          padding: 0,
-        }}>
+        <BlogTitle> Latest blog posts </BlogTitle>
+        <BlogList>
           {pageLinks}
-        </ul>
+        </BlogList>
       </div>
     )
   }
