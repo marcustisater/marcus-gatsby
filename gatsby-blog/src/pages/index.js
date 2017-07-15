@@ -20,14 +20,13 @@ class BlogIndex extends React.Component {
               marginBottom: "1rem",
               paddingTop: "1rem",
               borderTop: "1px solid #eee",
-              fontSize: "1.3rem",
+              fontSize: "1.2rem",
             }}
             key={post.node.frontmatter.path}
           >
             <Link style={{ boxShadow: "none", display: "flex" }} to={post.node.frontmatter.path}>
 
               <div style={{
-                fontWeight: "700",
                 color: "#222",
               }}>
                 {post.node.frontmatter.title}
@@ -36,7 +35,7 @@ class BlogIndex extends React.Component {
               <div style={{
                 marginLeft: "1rem"
               }}>
-                {"Read more..."}
+                {"Read more.."}
               </div>
             </Link>
           </li>

@@ -39,6 +39,7 @@ class Bio extends React.Component {
               fontSize: "1.5rem",
               fontWeight: "700",
               color: "#333",
+              lineHeight: "1",
             }}>
               Hi, I am
             </p>
@@ -80,9 +81,9 @@ class Bio extends React.Component {
                   color: "#5694f1",
                   }}
                   target="_blank"
-                  href="http://www.ottoboni.se"
+                  href="http://www.happiness.se"
                 >
-                Ottoboni Group
+                Happiness
               </a>
             </p>
           </div>

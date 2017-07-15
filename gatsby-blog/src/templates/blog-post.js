@@ -15,19 +15,16 @@ class BlogPostTemplate extends React.Component {
       <div className="container">
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
         <h1 style={{
-          display: "inline",
           background: "#333",
           color: "#fff",
           padding: "0.2rem"
         }}>
+
           {post.frontmatter.title}
+
         </h1>
-        <p style={{
-          fontWeight: "300",
-          fontStyle: "italic",
-          marginBottom: "3rem",
-        }}>
-          Posted on {post.frontmatter.date}
+        <p>
+          {post.frontmatter.date}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr style={{margin: "3.5rem 0 0 0"}}/>

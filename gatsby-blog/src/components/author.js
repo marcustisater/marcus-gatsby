@@ -6,7 +6,7 @@ class Author extends React.Component {
     return (
       <div className="container">
         <h2> Thanks for reading 😍 </h2>
-        <p> Feel free to share this post with your friends </p>
+        <p> Feel free to reach me on <a href="https://twitter.com/MarcusTister">Twitter</a> and ask me a question </p>
       </div>
     )
   }
