@@ -13,6 +13,7 @@ const Header = styled.div `
   @media screen and (max-width: 768px) {
     flex-direction: column;
     justify-content: center;
+    padding-top: 1rem;
   }
 `;
 
@@ -20,10 +21,16 @@ const HeaderImage = styled.img `
   margin-bottom: 0;
   width: 115px;
   height: 115px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const HeaderProfile = styled.div `
-  margin-left: 1.25rem;
+  @media screen and (min-width: 768px) {
+    margin-left: 1.25rem;
+  }
 `
 
 const HeaderProfileIntro = styled.p `
@@ -37,7 +44,7 @@ const HeaderProfileIntro = styled.p `
 const HeaderProfileName = styled.h1 `
   margin-top: 0;
   font-size: 2.6rem;
-  margin-top: 0;
+  margin-top: -3px;
   line-height: 1;
   margin-bottom: 0;
 `;

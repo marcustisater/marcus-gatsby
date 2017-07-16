@@ -13,8 +13,22 @@ const ArticleList = styled.li `
   font-size: 1.2rem;
 `;
 
+const ArticleListItem = styled(Link) `
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+`;
+
 const ArticleListLink = styled.div `
-  margin-left: 1rem;
+  margin-top: 0.5rem;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 1rem;
+    margin-top: 0;
+  }
 `;
 
 const ArticleListTitle = styled.div `
@@ -31,6 +45,10 @@ const BlogList = styled.ul `
   padding: 0;
 `;
 
+const IndexWrapper = styled.div `
+  
+`;
+
 class BlogIndex extends React.Component {
   render() {
     // console.log("props", this.props)
@@ -41,19 +59,15 @@ class BlogIndex extends React.Component {
       if (post.node.path !== "/404/") {
         const title = get(post, "node.frontmatter.title") || post.node.path
         pageLinks.push(
-          <ArticleList
-            key={post.node.frontmatter.path}
-          >
-            <Link style={{ boxShadow: "none", display: "flex" }} to={post.node.frontmatter.path}>
-
+          <ArticleList key={post.node.frontmatter.path}>
+            <ArticleListItem to={post.node.frontmatter.path}>
               <ArticleListTitle>
                 {post.node.frontmatter.title}
               </ArticleListTitle>
-
               <ArticleListLink>
                 {"Read more.."}
               </ArticleListLink>
-            </Link>
+            </ArticleListItem>
           </ArticleList>
         )
       }
@@ -63,10 +77,12 @@ class BlogIndex extends React.Component {
       <div>
         <Helmet title={get(this, "props.data.site.siteMetadata.title")} />
         <Bio />
-        <BlogTitle> Latest blog posts </BlogTitle>
-        <BlogList>
-          {pageLinks}
-        </BlogList>
+        <IndexWrapper>
+          <BlogTitle> Latest blog posts </BlogTitle>
+          <BlogList>
+            {pageLinks}
+          </BlogList>
+        </IndexWrapper>
       </div>
     )
   }

@@ -3,8 +3,13 @@ import Link from "gatsby-link"
 import styled, { css } from 'styled-components';
 
 const FooterSection = styled.footer `
-  margin-top: 5rem;
-  text-align: right;
+  margin-top: 2.5rem;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 5rem;
+    text-align: right;
+    margin-bottom: 2rem;
+  }
 `;
 
 const FooterSectionText = styled.p `

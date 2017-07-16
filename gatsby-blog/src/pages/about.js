@@ -3,12 +3,9 @@ import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import styled, { css } from 'styled-components';
 
-import Bio from '../components/Bio.js';
-
 import postcssImage from "./img/postcss.png"
 import wpsvImage from "./img/wpsv.png"
 import meetupImage from "./img/meetup.png"
-import blogImage from "./img/blog.png"
 import boxingImage from "./img/boxing.png"
 
 const List = styled.ul`
@@ -49,14 +46,31 @@ const ListItemDescriptionContent = styled.p`
   margin: 0;
 `;
 
+const HeadLine = styled.h1 `
+  font-size: 1.5rem;
+`;
+
+const HeadLineText = styled.span `
+  display: block;
+  font-size: 2rem;
+`
 
 export default class About extends React.Component {
   render() {
     return (
       <div>
 
-        <Bio />
+        <HeadLine> Hi, I'm
 
+          <HeadLineText> Marcus Tisäter </HeadLineText>
+
+        </HeadLine>
+
+        <p> I'm a front-end developer with focus on writing semantic markup and structured CSS.  </p>
+
+        <p> I have a big heart for Open Source, I work with well known teams like PostCSS, supporting GatsbyJS and </p>
+
+        <p> I also do.. </p>
         <List>
 
           <ListItem>
@@ -89,17 +103,6 @@ export default class About extends React.Component {
             <ListItemDescription>
               <ListItemDescriptionTitle>WordPress Sverige</ListItemDescriptionTitle>
               <p style={{margin: 0}}>I help organize meetups in Stockholm, also last years WordCamp Stockholm 2016 at Internetdagarna.</p>
-            </ListItemDescription>
-          </ListItem>
-
-          <ListItem>
-            <ListItemImage
-              src={blogImage}
-              alt={`blog`}
-            />
-            <ListItemDescription>
-              <ListItemDescriptionTitle>Skills</ListItemDescriptionTitle>
-              <ListItemDescriptionContent>I focus on writing semantic markup with accessibility in mind, I do a lot of script tooling such as gulp and webpack, also been working with MVCs like React and Vue.</ListItemDescriptionContent>
             </ListItemDescription>
           </ListItem>
 

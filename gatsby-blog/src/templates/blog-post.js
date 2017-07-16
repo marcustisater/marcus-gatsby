@@ -2,9 +2,17 @@ import React from "react"
 import Helmet from "react-helmet"
 import Link from "gatsby-link"
 import get from "lodash/get"
+import styled, { css } from 'styled-components';
 
 import Bio from "../components/Bio"
 import Author from "../components/Author.js";
+
+const BlogHeadline = styled.h1 `
+  background: #333;
+  color: #fff;
+  padding: 0.2rem;
+`;
+
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -14,19 +22,17 @@ class BlogPostTemplate extends React.Component {
     return (
       <div className="container">
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-        <h1 style={{
-          background: "#333",
-          color: "#fff",
-          padding: "0.2rem"
-        }}>
 
+        <BlogHeadline>
           {post.frontmatter.title}
+        </BlogHeadline>
 
-        </h1>
         <p>
           {post.frontmatter.date}
         </p>
+
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+
         <hr style={{margin: "3.5rem 0 0 0"}}/>
 
         <Author />

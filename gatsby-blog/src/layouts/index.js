@@ -1,10 +1,27 @@
 import React from "react"
 import Link from "gatsby-link"
-import { Container } from "react-responsive-grid"
+import styled, { css } from 'styled-components';
+
 import Footer from "../components/Footer.js";
 
 import "../css/sanitize.css";
 import "../css/style.css";
+
+const Wrapper = styled.div `
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem 0 1.5rem;
+`;
+
+const NavigationList = styled.ul `
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+
+  @media screen and (min-width: 768px) {
+    justify-content: flex-end;
+  }
+`;
 
 class Template extends React.Component {
   render() {
@@ -15,13 +32,7 @@ class Template extends React.Component {
       <div>
 
         <nav>
-          <ul
-            style={{
-              display: "flex",
-              justifyContent: "flex-end",
-              padding: "1rem"
-            }}
-          >
+          <NavigationList>
             <li>
               <Link style={{ color: "#5694f1", padding: "0.4rem 0.8rem" }} to="/">
                 Home
@@ -51,17 +62,17 @@ class Template extends React.Component {
                 Twitter
               </a>
             </li>
-          </ul>
+          </NavigationList>
         </nav>
       </div>
       )
 
     return (
-      <Container>
+      <Wrapper>
         {header}
         {children()}
         <Footer />
-      </Container>
+      </Wrapper>
     )
   }
 }
