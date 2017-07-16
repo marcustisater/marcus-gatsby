@@ -23,7 +23,7 @@ const ArticleListItem = styled(Link) `
 `;
 
 const ArticleListLink = styled.div `
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 
   @media screen and (min-width: 768px) {
     margin-left: 1rem;
@@ -43,10 +43,6 @@ const BlogList = styled.ul `
   list-style-type: none;
   margin: 0;
   padding: 0;
-`;
-
-const IndexWrapper = styled.div `
-  
 `;
 
 class BlogIndex extends React.Component {
@@ -77,12 +73,12 @@ class BlogIndex extends React.Component {
       <div>
         <Helmet title={get(this, "props.data.site.siteMetadata.title")} />
         <Bio />
-        <IndexWrapper>
+        <div>
           <BlogTitle> Latest blog posts </BlogTitle>
           <BlogList>
             {pageLinks}
           </BlogList>
-        </IndexWrapper>
+        </div>
       </div>
     )
   }

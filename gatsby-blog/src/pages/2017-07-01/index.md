@@ -27,9 +27,9 @@ Now we must define the rows of the grid using the `grid-template-rows` propert
 
 </div>
 
-<iframe url="https://www.youtube.com/embed/lzjIe-8WhiQ" width="600" height="400"></iframe>
-
 **Hot tip: Firefox has [implemented](https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts) a grid overlay representation for the inspector when inspecting a grid layout. My screenshots use the Firefox overlay.**
+
+You can watch the video here https://www.youtube.com/embed/lzjIe-8WhiQ
 
 ### New unit for grid (fr)
 
@@ -114,6 +114,4 @@ There is so much more to learn about grid. You should deep dive into these resou
 * [Grid by example](https://gridbyexample.com/), Rachel Andrews official documentation on grid.
 * [CSS Grid Garden](https://cssgridgarden.com), a CSS game to boost your grid skills
 * [The complete guide](https://css-tricks.com/snippets/css/complete-guide-grid/) to the grid spec by CSS-Tricks
-
-<iframe url="http://wordpress.tv/2017/06/30/morten-rand-hendriksen-css-grid-changes-everything-about-web-layouts/
-" width="600" height="400"></iframe>
+* Great talk on CSS Grid http://wordpress.tv/2017/06/30/morten-rand-hendriksen-css-grid-changes-everything-about-web-layouts/

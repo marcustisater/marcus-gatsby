@@ -11,6 +11,7 @@ const BlogHeadline = styled.h1 `
   background: #333;
   color: #fff;
   padding: 0.2rem;
+  display: inline;
 `;
 
 
@@ -33,7 +34,7 @@ class BlogPostTemplate extends React.Component {
 
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
 
-        <hr style={{margin: "3.5rem 0 0 0"}}/>
+        <hr style={{margin: "3.5rem 0"}}/>
 
         <Author />
       </div>

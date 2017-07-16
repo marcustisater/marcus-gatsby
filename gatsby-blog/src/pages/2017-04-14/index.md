@@ -11,7 +11,7 @@ It was very interesting to see how the users approached the editor, all the test
 
 Watch the full video and let me know if you want me to upload any raw footage from any of the tests!
 
-<iframe url="https://www.youtube.com/watch?v=7iWRBLCP-l0" width="600" height="400"></iframe>
+Here is the video: https://www.youtube.com/watch?v=7iWRBLCP-l0/
 
 ## 👍
 

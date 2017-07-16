@@ -23,6 +23,16 @@ const NavigationList = styled.ul `
   }
 `;
 
+const NavigationListLink = styled(Link) `
+  color: #5694f1;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+
+  &:hover {
+    color: #4db380;
+  }
+`;
+
 class Template extends React.Component {
   render() {
     const { location, children } = this.props
@@ -34,33 +44,33 @@ class Template extends React.Component {
         <nav>
           <NavigationList>
             <li>
-              <Link style={{ color: "#5694f1", padding: "0.4rem 0.8rem" }} to="/">
-                Home
-              </Link>
+              <NavigationListLink to="/">
+                Blog
+              </NavigationListLink>
             </li>
 
             <li>
-              <Link style={{ color: "#5694f1", padding: "0.4rem 0.8rem" }} to="/about">
+              <NavigationListLink to="/about">
                 About
-              </Link>
+              </NavigationListLink>
             </li>
 
             <li>
-              <Link style={{ color: "#5694f1", padding: "0.4rem 0.8rem" }} to="/speaking">
+              <NavigationListLink to="/speaking">
                 Speaking
-              </Link>
+              </NavigationListLink>
             </li>
 
             <li>
-              <a style={{ color: "#5694f1", padding: "0.4rem 0.8rem" }} target="_blank" href="https://github.com/marcustisater">
+              <NavigationListLink target="_blank" href="https://github.com/marcustisater">
                 GitHub
-              </a>
+              </NavigationListLink>
             </li>
 
             <li>
-              <a style={{ color: "#5694f1", padding: "0.4rem 0.8rem" }} target="_blank" href="https://twitter.com/marcustister">
+              <NavigationListLink target="_blank" href="https://twitter.com/marcustister">
                 Twitter
-              </a>
+              </NavigationListLink>
             </li>
           </NavigationList>
         </nav>

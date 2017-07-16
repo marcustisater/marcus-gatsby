@@ -44,14 +44,14 @@ const HeaderProfileIntro = styled.p `
 const HeaderProfileName = styled.h1 `
   margin-top: 0;
   font-size: 2.6rem;
-  margin-top: -3px;
+  margin-top: -5px;
   line-height: 1;
   margin-bottom: 0;
 `;
 
 const HeaderProfileTitle = styled.p `
   font-size: 1.35rem;
-  margin-top: 0.25em;
+  margin-top: 0.35em;
   margin-bottom: 0;
   font-weight: 300;
   color: #aaa;
