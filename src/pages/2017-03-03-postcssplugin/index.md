@@ -1,5 +1,5 @@
 ---
-title: So, you want to make a PostCSS plugin?
+title: So, you want to make a PostCSS plugin? CSS-Tricks Guest.
 date: "2016-01-22"
 path: "/postcss-plugin/"
 ---

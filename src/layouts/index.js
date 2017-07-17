@@ -38,7 +38,7 @@ const NavigationListLink = styled(Link) `
   }
 `;
 
-const NavigationListLinkHref = styled(Link) `
+const NavigationListLinkHref = styled.a `
   color: #5694f1;
   padding: 0.4rem 0.8rem;
   cursor: pointer;
