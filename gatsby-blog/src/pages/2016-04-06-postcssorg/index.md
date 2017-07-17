@@ -1,8 +1,6 @@
 ---
 title: How we built postcss.org with an open source team of collaborators
-date: 2016-01-22
-layout: post
-readNext: "/about"
+date: "2016-04-06"
 path: "/how-we-built-postcssorg/"
 ---
 
@@ -33,17 +31,18 @@ Let’s jump into Open Source Design (OSD). OSD is a bit tricky and every open s
 
 I would like to take the time to thank everyone who posted a few design ideas for the website itself and especially Andrey Okonetchnikov for creating the final complete visual design for postcss.org with help and feedback from the team. Here are some of the design sketches and progress.
 
-![postcssmockup](https://cloud.githubusercontent.com/assets/38894/12145751/e000ced4-b444-11e5-93d8-ebf5a4444f02.png)
+![postcssmockup](./1.png)
 
-![postcssmockup](https://cloud.githubusercontent.com/assets/38894/12274343/5458a462-b91f-11e5-8f20-3264402ba196.png)
+![postcssmockup](./2.png)
 
-![postcssmockup](https://cloud.githubusercontent.com/assets/11071/12262127/0a7442fa-b926-11e5-8531-9402d2a21fbb.png)
+![postcssmockup](./3.png)
 
-![postcssmockup](https://cloud.githubusercontent.com/assets/11071/12272128/06ce7b14-b95f-11e5-8f35-30f189820884.png)
+![postcssmockup](./4.png)
 
-![postcssmockup](https://cloud.githubusercontent.com/assets/11071/12445760/84ce0e96-bf66-11e5-9adf-39e3abe3f438.png)
+![postcssmockup](./5.png)
 
-![postcssmockup](https://cloud.githubusercontent.com/assets/11071/12518954/03429518-c13c-11e5-9df3-86582a60604f.png)
+![postcssmockup](./6.png)
+
 
 ### Zeplin?!
 

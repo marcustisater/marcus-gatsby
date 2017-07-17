@@ -70,16 +70,12 @@ export default class About extends React.Component {
 
         <p> I'm a front-end developer that loves writing semantic markup and structured CSS. </p>
 
-        <p> I have a big heart for Open Source, I work with well known teams like PostCSS, supporting GatsbyJS and </p>
+        <p> I have a big heart for open source, worked with people from the PostCSS team, involved within the Swedish WordPress community organzing meetups and camps.  </p>
 
-        <p>I do a lot of script tooling such as gulp and webpack, also been working with MVCs like React and Vue.
+        <p>I do a lot of script tooling such as configuring gulp and webpack, also been working with MVCs React and Vue. </p>
 
-         I have a big heart for open source as I am contributing to projects to help out. My latest contributed project was postcss were I worked closely with Andrey Sitnik, Max Stobier and many more developers to create postcss.org.
+        <p>Besides coding, I strive to be as athletic as I can be by doing MMA. I also have a two year old bernese mountain dog… that eats a lot of food 😂 </p>
 
-        Besides coding, I strive to be as athletic as I can be by doing MMA. I also have a two year old bernese mountain dog… that eats a lot of food 😂
-        </p>
-
-        <p> I also do.. </p>
         <List>
 
           <ListItem>

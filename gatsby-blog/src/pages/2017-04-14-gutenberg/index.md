@@ -1,6 +1,6 @@
 ---
 title: WordPress Gutenberg User testing 101
-date: 2017-04-14
+date: "2017-04-14"
 layout: post
 path: "/gutenberg-usertesting/"
 ---

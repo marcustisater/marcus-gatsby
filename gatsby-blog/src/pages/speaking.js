@@ -6,7 +6,7 @@ export default class Speaking extends React.Component {
   render() {
     return (
       <div>
-        <h3>I spoke at 🙊</h3>
+        <h3>I spoke 🙊 at</h3>
 
         <p>Brandson about PostCSS. <a href="http://marcustisater.github.io/postcss-presentation/">http://marcustisater.github.io/postcss-presentation/</a></p>
         <p>NOX about PostCSS in depth. <a href="http://slides.com/marcustisater/postcss">http://slides.com/marcustisater/postcss</a></p>

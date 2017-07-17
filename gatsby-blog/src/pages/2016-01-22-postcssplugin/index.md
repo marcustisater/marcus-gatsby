@@ -1,6 +1,6 @@
 ---
 title: So, you want to make a PostCSS plugin?
-date: 2016-01-22
+date: "2016-01-22"
 layout: post
 readNext: "/how-we-built-postcssorg/"
 path: "/postcss-plugin/"

@@ -8,10 +8,15 @@ import "../css/sanitize.css";
 import "../css/style.css";
 
 const Wrapper = styled.div `
+  padding: 0.5rem 1rem;
+`;
+
+const WrapperInner = styled.div `
   max-width: 50rem;
   margin: 0 auto;
-  padding: 3.5rem 1.5rem 0 1.5rem;
+  padding: 2rem 1.5rem 0 1.5rem;
 `;
+
 
 const NavigationList = styled.ul `
   display: flex;
@@ -24,6 +29,16 @@ const NavigationList = styled.ul `
 `;
 
 const NavigationListLink = styled(Link) `
+  color: #5694f1;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+
+  &:hover {
+    color: #4db380;
+  }
+`;
+
+const NavigationListLinkHref = styled(Link) `
   color: #5694f1;
   padding: 0.4rem 0.8rem;
   cursor: pointer;
@@ -62,15 +77,15 @@ class Template extends React.Component {
             </li>
 
             <li>
-              <NavigationListLink target="_blank" href="https://github.com/marcustisater">
+              <NavigationListLinkHref target="_blank" href="https://github.com/marcustisater">
                 GitHub
-              </NavigationListLink>
+              </NavigationListLinkHref>
             </li>
 
             <li>
-              <NavigationListLink target="_blank" href="https://twitter.com/marcustister">
+              <NavigationListLinkHref target="_blank" href="https://twitter.com/marcustister">
                 Twitter
-              </NavigationListLink>
+              </NavigationListLinkHref>
             </li>
           </NavigationList>
         </nav>
@@ -80,8 +95,10 @@ class Template extends React.Component {
     return (
       <Wrapper>
         {header}
-        {children()}
-        <Footer />
+          <WrapperInner>
+          {children()}
+          <Footer />
+        </WrapperInner>
       </Wrapper>
     )
   }

@@ -1,6 +1,6 @@
 ---
-title: My take on the CSS grid layout 101
-date: 2017-07-01
+title: My take on the CSS grid layout
+date: "2017-07-01"
 layout: post
 path: "/css-grid-layout/"
 ---
@@ -114,4 +114,4 @@ There is so much more to learn about grid. You should deep dive into these resou
 * [Grid by example](https://gridbyexample.com/), Rachel Andrews official documentation on grid.
 * [CSS Grid Garden](https://cssgridgarden.com), a CSS game to boost your grid skills
 * [The complete guide](https://css-tricks.com/snippets/css/complete-guide-grid/) to the grid spec by CSS-Tricks
-* Great talk on CSS Grid http://wordpress.tv/2017/06/30/morten-rand-hendriksen-css-grid-changes-everything-about-web-layouts/
+* [Morten Rand-Hendriksen: CSS Grid Changes Everything (About Web Layouts) VIDEO](http://wordpress.tv/2017/06/30/morten-rand-hendriksen-css-grid-changes-everything-about-web-layouts/)
