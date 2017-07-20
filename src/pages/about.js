@@ -23,7 +23,7 @@ const ListItem = styled.li`
 `;
 
 const ListItemImage = styled.img`
-  height: 7rem;
+  height: 4rem;
   border-radius: 100%;
 `;
 
@@ -67,13 +67,12 @@ export default class About extends React.Component {
 
         </HeadLine>
 
-        <p> I'm a front-end developer that loves writing semantic markup and structured RWD CSS. </p>
+        <p> I'm a front-end developer that loves writing semantic markup and structured CSS. Tooling is something I also like, especially configuring gulp or webpack workflows, or work with MVCs like React and Vue. I think my biggest passion is still perfecting pixels and work with well thoughout layouts. </p>
 
-        <p>I do a lot of script tooling such as gulp and webpack, also working with MVCs like React and Vue. </p>
+        <p> Did I forgot to mention that I ❤️ open source? I have worked with people from the <a href="github.com/postcss/">PostCSS team</a>. I'm very actively involved within the Swedish WordPress community, <a href="http://www.meetup.com/WordPress-Stockholm/">organzing meetups</a> and <a href="http://2017.stockholm.wordcamp.org">WordCamps</a> with great folks. I also help maintain <a href="http://wpsv.se"> WordPress Sverige</a> and the <a href="http://sv.wordpress.org">installation language profile</a> to support the community.
+        </p>
 
-        <p> I ❤️ open source, I have worked with people from the <a href="github.com/postcss/">PostCSS team</a> building great stuff and been part of an community. I'm now actively involved within the Swedish WordPress community, <a href="http://www.meetup.com/WordPress-Stockholm/">organzing meetups</a> and <a href="2017.stockholm.wordcamp.org">WordCamps</a> with great folks!
-
-      </p> I also help maintain <a href="http://wpsv.se"> WordPress Sverige</a> and the <a href="http://sv.wordpress.org">installation language profile</a>.
+        <p> What else? Hmmm...</p>
 
         <List>
 

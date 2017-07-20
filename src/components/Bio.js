@@ -2,7 +2,7 @@ import React from "react"
 import Link from "gatsby-link"
 import styled, { css } from 'styled-components';
 
-import profilePic from "./profile-pic.png"
+import profilePic from "./profile-pic.jpg"
 
 const Header = styled.div `
   padding-top: 3rem;
@@ -21,6 +21,7 @@ const HeaderImage = styled.img `
   margin-bottom: 0;
   width: 115px;
   height: 115px;
+  border-radius: 100%;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -50,8 +51,8 @@ const HeaderProfileName = styled.h1 `
 `;
 
 const HeaderProfileTitle = styled.p `
-  font-size: 1.35rem;
-  margin-top: 0.35em;
+  font-size: 1.45rem;
+  margin-top: -1px;
   margin-bottom: 0;
   font-weight: 300;
   color: #aaa;
