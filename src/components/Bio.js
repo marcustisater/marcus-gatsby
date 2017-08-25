@@ -91,9 +91,9 @@ class Bio extends React.Component {
               {" "}
               <HeaderProfileTitleLink
                   target="_blank"
-                  href="http://www.happiness.se"
+                  href="http://www.ottoboni.se"
                 >
-                Happiness
+                Ottoboni Group
               </HeaderProfileTitleLink>
             </HeaderProfileTitle>
           </HeaderProfile>
