@@ -6,9 +6,10 @@ const FooterSection = styled.footer `
   margin-top: 2.5rem;
 
   @media screen and (min-width: 768px) {
-    margin-top: 5rem;
-    text-align: right;
     margin-bottom: 2rem;
+    margin-top: 5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e5e5;
   }
 `;
 

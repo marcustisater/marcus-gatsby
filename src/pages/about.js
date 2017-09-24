@@ -67,12 +67,12 @@ export default class About extends React.Component {
 
         </HeadLine>
 
-        <p> I'm a front-end developer that loves writing semantic markup and structured CSS. Tooling is something I also like, especially configuring gulp or webpack workflows, or work with MVCs like React and Vue. I think my biggest passion is still perfecting pixels and work with well thoughout layouts. </p>
+        <p> I'm a front-end developer that loves writing semantic markup and structured CSS. I love tooling gulp and webpack workflows and work with MVCs like React and Angular. I think my biggest passion is still perfecting pixels and work with well thoughout layouts. </p>
 
         <p> Did I forgot to mention that I ❤️ open source? I have worked with people from the <a href="github.com/postcss/">PostCSS team</a>. I'm very actively involved within the Swedish WordPress community, <a href="http://www.meetup.com/WordPress-Stockholm/">organzing meetups</a> and <a href="http://2017.stockholm.wordcamp.org">WordCamps</a> with great folks. I also help maintain <a href="http://wpsv.se"> WordPress Sverige</a> and the <a href="http://sv.wordpress.org">installation language profile</a> to support the community.
         </p>
 
-        <p> What else? Hmmm...</p>
+        <p> What else? </p>
 
         <List>
 
@@ -83,7 +83,7 @@ export default class About extends React.Component {
             />
               <ListItemDescription>
                 <ListItemDescriptionTitle>Don't forget your health!</ListItemDescriptionTitle>
-                <ListItemDescriptionContent>I practice mixed martial arts, trying to live an active lifestyle. You should too.</ListItemDescriptionContent>
+                <ListItemDescriptionContent>I practice mixed martial arts, trying to live an active lifestyle.</ListItemDescriptionContent>
               </ListItemDescription>
           </ListItem>
 
@@ -94,7 +94,7 @@ export default class About extends React.Component {
             />
             <ListItemDescription>
                 <ListItemDescriptionTitle>Occasionall Speaker</ListItemDescriptionTitle>
-                <ListItemDescriptionContent>Sometimes I speak at conferences and meetups. You should do it as well.</ListItemDescriptionContent>
+                <ListItemDescriptionContent>Sometimes I speak at conferences and meetups.</ListItemDescriptionContent>
             </ListItemDescription>
           </ListItem>
         </List>
