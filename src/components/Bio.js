@@ -44,8 +44,8 @@ const HeaderProfileIntro = styled.p `
 
 const HeaderProfileName = styled.h1 `
   margin-top: 0;
-  font-size: 2.6rem;
-  margin-top: -5px;
+  font-size: 3.2rem;
+  margin-top: -8px;
   line-height: 1;
   margin-bottom: 0;
 `;
@@ -80,7 +80,7 @@ class Bio extends React.Component {
 
           <HeaderProfile>
             <HeaderProfileIntro>
-              Hi, I am
+              Howdy, I am
             </HeaderProfileIntro>
             <HeaderProfileName>
               Marcus Tisäter

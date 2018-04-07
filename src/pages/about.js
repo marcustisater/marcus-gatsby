@@ -59,34 +59,27 @@ export default class About extends React.Component {
     return (
       <div>
 
-        <HeadLine> Hi, I'm
+        <HeadLine>
 
-          <HeadLineText> Marcus Tisäter </HeadLineText>
+          <HeadLineText> Who am I? </HeadLineText>
 
           <HeadLineText> 🙄 </HeadLineText>
 
         </HeadLine>
 
-        <p> I'm a front-end developer that loves writing semantic markup and structured CSS. I love tooling gulp and webpack workflows and work with MVCs like React and Angular. I think my biggest passion is still perfecting pixels and work with well thoughout layouts. </p>
+        <p> I have been building web sites and appliactions for over 5 years profesionally now and still loving it.
 
-        <p> Did I forgot to mention that I ❤️ open source? I have worked with people from the <a href="github.com/postcss/">PostCSS team</a>. I'm very actively involved within the Swedish WordPress community, <a href="http://www.meetup.com/WordPress-Stockholm/">organzing meetups</a> and <a href="http://2017.stockholm.wordcamp.org">WordCamps</a> with great folks. I also help maintain <a href="http://wpsv.se"> WordPress Sverige</a> and the <a href="http://sv.wordpress.org">installation language profile</a> to support the community.
+            Last year I helped organized <a href="https://2017.stockholm.wordcamp.org/">WordCamp Stockholm 2017</a> and the year before that I was involved within the <a href="https://github.com/postcss">PostCSS Team</a>.
+
+            Lately I have been taking time to deeply learning JavaScript to work with nodejs appliactions and improve my skills within MVCs like React and Angular.
+
         </p>
 
-        <p> What else? </p>
+        <p>
+            You can find me on <a href="https://github.com/marcustisater">GitHub</a>, <a href="https://www.linkedin.com/in/marcus-tis%C3%A4ter-7a740480/">Linkedin</a> or <a href="https://twitter.com/MarcusTister">Twitter</a>.
+        </p>
 
         <List>
-
-          <ListItem>
-            <ListItemImage
-              src={boxingImage}
-              alt={`boxing`}
-            />
-              <ListItemDescription>
-                <ListItemDescriptionTitle>Don't forget your health!</ListItemDescriptionTitle>
-                <ListItemDescriptionContent>I practice mixed martial arts, trying to live an active lifestyle.</ListItemDescriptionContent>
-              </ListItemDescription>
-          </ListItem>
-
           <ListItem>
             <ListItemImage
               src={meetupImage}
