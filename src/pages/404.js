@@ -1,18 +1,10 @@
 import React from 'react';
-import Link from 'gatsby-link';
-import Helmet from 'react-helmet';
+import Layout from 'components/layout';
 
-export default class Notfound extends React.Component {
-  render() {
-    return (
-      <div>
-        <h3>Whoops, 404 Not Found! </h3>
+const NotFound = () => (
+  <Layout>
+    <div>404 - Not found.</div>
+  </Layout>
+);
 
-        <p> Seems like you found a broken link </p>
-
-        <p> Let me know </p>
-
-      </div>
-    );
-  }
-}
+export default NotFound;
