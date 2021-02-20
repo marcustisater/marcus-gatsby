@@ -15,10 +15,6 @@ const Layout = ({ data, children }) => (
     <GlobalStyle />
     <Head />
     <Header title={data.site.siteMetadata.siteTitle} />
-    <SocialLinks />
-    <OpenSource />
-    <Work />
-    <Blog /> 
   </Container>
 );
 

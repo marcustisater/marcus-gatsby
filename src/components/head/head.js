@@ -29,7 +29,7 @@ const Head = ({
     <meta content={siteTitle} name="apple-mobile-web-app-title" />
     <meta content={pageTitleFull} property="og:title" />
     <meta content={pageTitleFull} name="twitter:title" />
-    <title>{pageTitleFull}</title>
+    <title>Marcus Tisäter</title>
 
     <meta content={siteDescription} name="description" />
     <meta content={siteDescription} property="og:description" />
